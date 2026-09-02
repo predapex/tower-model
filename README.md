@@ -1,2 +1,42 @@
 # tower-model
 Interactive 3D model of Dan's tower and rope-climb A-frame
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tower Model</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #eeeeee;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<model-viewer
+  src="tower_aframe_with_knee_braces.glb"
+  camera-controls
+  touch-action="pan-y"
+  shadow-intensity="1"
+  exposure="1"
+  auto-rotate
+  ar>
+</model-viewer>
+
+</body>
+</html>
